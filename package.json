@@ -1,6 +1,6 @@
 {
   "name": "hapi-knex-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Route generator for Hapi & Knex",
   "main": "index.js",
   "scripts": {
