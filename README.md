@@ -24,11 +24,31 @@ var myGenerator = new HapiKnexRouter(
 );
 ```
 
-Then generate routes
+Then generate routes with 3 parameters :
+* dbTable : Name of the table
+* routeName : Name of the route you want
+* params : 
+    * List of fields except uuid 
+    * Joi Validation
+    
 ```
-var myGenerator = new HapiKnexRouter(
-    client: 'pg', // mysql, sqlite3
-    connection: "...",
+    generateRoute(dbTable, routeName, params){
+```
+
+```
+var crudRoutes = myGenerator.generateRoute(
+    'myDbTable', 
+    'my_route', 
+    {
+        fields : ["label", "foreign_key"],
+        payload : 
+            Joi.object({ 
+                data: Joi.object({
+                    label: Joi.string().required(),
+                    foreign_key: Joi.string().guid().required(),
+                }).required()
+            })
+    }
 );
 ```
 
