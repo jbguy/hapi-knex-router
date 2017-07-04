@@ -1,0 +1,24 @@
+{
+  "name": "hapi-knex-router",
+  "version": "1.0.0",
+  "description": "Route generator for Hapi & Knex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbguy/hapi-knex-router.git"
+  },
+  "author": "Jean-Baptiste Guy <guy.jbaptiste@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbguy/hapi-knex-router/issues"
+  },
+  "homepage": "https://github.com/jbguy/hapi-knex-router#readme",
+  "dependencies": {
+    "joi": "^10.6.0",
+    "knex": "^0.13.0",
+    "node-uuid": "^1.4.8"
+  }
+}
