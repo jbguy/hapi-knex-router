@@ -29,7 +29,7 @@ module.exports = class HapiKnexRouter {
             method: 'GET',
             config: {
                 tags: ['api'], 
-                //auth: { strategy: 'token' },
+                auth: { strategy: 'token' },
             },
             handler: ( request, reply ) => {
                 const getOperation = this.knex( this.dbTable ).orderBy('created_at')
