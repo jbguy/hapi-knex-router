@@ -14,8 +14,7 @@ Start by add the require package
 var HapiKnexRouter = require('hapi-knex-router');
 ```
 
-Initialize the generator with a Knex.Config object
-http://knexjs.org/#Installation-client
+Initialize the generator with a[Knex.Config object](http://knexjs.org/#Installation-client)
 
 ```
 var myGenerator = new HapiKnexRouter(
