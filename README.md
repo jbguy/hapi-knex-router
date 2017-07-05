@@ -4,7 +4,7 @@ Route generator for Hapi.js combine to Knex.js
 
 ### Prerequisites
 
-You need to install Hapi.js & Knex.js on you Node environment
+You need to install [Hapi](https://hapijs.com/) & [KnexJS](http://knexjs.org/) on you Node environment
 
 ### Use
 
@@ -14,13 +14,13 @@ Start by add the require package
 var HapiKnexRouter = require('hapi-knex-router');
 ```
 
-Initialize the generator with a[Knex.Config object](http://knexjs.org/#Installation-client)
+Initialize the generator with a [Knex.Config object](http://knexjs.org/#Installation-client)
 
 ```
-var myGenerator = new HapiKnexRouter(
+var myGenerator = new HapiKnexRouter({
     client: 'pg', // mysql, sqlite3
     connection: "...",
-);
+});
 ```
 
 Then generate routes with 3 parameters :
