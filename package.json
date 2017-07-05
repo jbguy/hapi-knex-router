@@ -20,5 +20,8 @@
     "joi": "^10.6.0",
     "knex": "^0.13.0",
     "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "lab": "^14.1.0"
   }
 }
